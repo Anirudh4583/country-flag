@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
@@ -13,4 +13,49 @@ body{
   height: 100vh;
   overflow: hidden;
   margin: 0;
+
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: bgGrad 10s ease-in infinite;
+}
+
+.container {
+  background: #fff;
+  width: 600px;
+  height: 400px;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 5px 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.container select {
+  color: black;
+  font-weight: bold;
+  background: white;
+  border: 2px solid black;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flag img {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  height: 320px;
+}
+
+@keyframes bgGrad {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

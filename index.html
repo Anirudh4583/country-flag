@@ -15,12 +15,15 @@
   </head>
 
   <body>
-    <h1>Deepu Peepu</h1>
-    <label for="countires">select country</label>
-    <select type="dropdown" name="country" id="countries" onchange="{run()}">
-      <option id="option" selected value="ALL">all</option>
-    </select>
-    <div class="flag" id="flag"></div>
+    <h1>Country Flags</h1>
+    <div class="container">
+      <select type="dropdown" name="country" id="countries" onchange="{run()}">
+        <option id="option" selected value="null">--SELECT COUNTRY--</option>
+      </select>
+      <div class="flag" id="flag">
+        <!-- insert flag -->
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

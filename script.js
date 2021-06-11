@@ -21,7 +21,7 @@ async function getCountries() {
       // console.log(data);
       data.map((country) => {
         sel.innerHTML += `<option value="${country.alpha2Code}">${country.name}</option>`;
-        console.log(country.alpha2Code);
+        // console.log(country.alpha2Code);
       });
     });
 }
